@@ -1,9 +1,6 @@
 nav {
   height: 50px;
 }
-nav ul {
-  margin: 0;
-}
 nav ul li {
   list-style: none;
   margin: 5px 10px;
@@ -45,4 +42,14 @@ nav ul li {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 0;
+}
+.going-top {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  width: 40px;
+  background: darkblue;
+}
+.footer-details-container {
+  border-left: 1px solid white;
 }
