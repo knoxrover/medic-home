@@ -202,6 +202,20 @@ nav {
   .location-container div {
     width: 100% !important;
   }
+  #footer {
+    padding: 15px 8px 8px 8px !important;
+  }
+  #footer-logo {
+    width: 45px;
+    height: 45px;
+  }
+  #footer-title {
+    margin: 0 8px;
+    font-size: 18px;
+  }
+  .footer-last {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 400px) {
