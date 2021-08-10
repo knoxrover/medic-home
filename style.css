@@ -4,6 +4,8 @@ body {
 }
 nav {
   height: 50px;
+  position: fixed;
+  width: 100%;
 }
 nav ul li {
   list-style: none;
@@ -22,6 +24,7 @@ nav ul li {
   font-size: 26px;
 }
 .poster img {
+  margin-top: 3rem;
   width: 100%;
 }
 
@@ -33,6 +36,8 @@ nav ul li {
   border: 1px solid #4f585e;
   padding: 3px 10px 2px 10px;
   outline: none;
+  position: sticky;
+  top: 10px;
 }
 
 .products-section-heading {
@@ -99,3 +104,36 @@ nav ul li {
 .footer-details-container {
   border-left: 1px solid white;
 }
+.mera-design {
+  width: 50%;
+}
+.mera-design img {
+  width: 70px !important;
+  height: 70px !important;
+}
+@media (min-width: 750px) and (max-width: 1100px) {
+  .search {
+    width: 35%;
+  }
+}
+@media (max-width: 749px) and (min-width: 710px) {
+  .search {
+    width: 200px;
+  }
+}
+@media (max-width: 709px) and (min-width: 350px) {
+  .search {
+    position: static;
+    width: 200px;
+  }
+}
+@media (max-width: 349px) and (min-width: 250px) {
+  body {
+    width: 78vh;
+  }
+}
+/* @media (max-width: 500px) {
+  .w-50 {
+    display: block !important;
+  }
+} */
