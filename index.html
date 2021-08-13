@@ -1,196 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/logo.jpg" />
     <title>Medi Home</title>
-</head>
+  </head>
 
-<body>
-    <nav class="nav d-flex justify-content-between align-items-center px-4 bg-primary text-light">
-        <div class="d-flex justify-content-between align-items-center">
-            <img id="logo" src="./img/logo.jpg" alt="logo">
-            <h2 id="website-title">Medi Home</h2>
-        </div>
-        <ul class="d-flex m-0 px-0 nav-items nav-ul">
-            <a class="text-light text-decoration-none" href="">
-                <li>Section1</li>
-            </a>
-            <a class="text-light text-decoration-none" href="">
-                <li>Login</li>
-            </a>
-        </ul>
+  <body>
+    <!-------------------- Navigation-bar --------------- -->
+    <nav>
+      <div class="logo-name">
+        <img class="nav-logo" src="./img/logo.jpg" alt="logo" />
+        <h2>Medi Home</h2>
+      </div>
+      <ul>
+        <li>
+          <a class="section1" href="/">Section1</a>
+        </li>
+        <li>
+          <a class="login" href="/">Login</a>
+        </li>
+      </ul>
     </nav>
+
+    <!-------------------- Image-Banner--------------- -->
     <section>
-        <div class="poster">
-            <img src="./img/poster.jpg" alt="poster">
-        </div>
-        <div>
-            <!-- <p class="px-4 my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate suscipit numquam
+      <div class="poster">
+        <img src="./img/poster.jpg" alt="poster" />
+      </div>
+      <div>
+        <!-- <p class="px-4 my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate suscipit numquam
                 reiciendis corporis
                 esse! Deleniti ipsum illum itaque incidunt. Corrupti sunt odit adipisci tempora iste laboriosam ad
                 delectus reiciendis explicabo commodi rem consequuntur error, perferendis porro optio assumenda dolore
                 voluptate. Qui iusto quaerat, at aspernatur veniam minima pariatur suscipit eveniet reiciendis sequi sit
                 fugit omnis ipsam. </p> -->
-        </div>
-    </section>
-    <section id="products-section" class="mt-2 px-4">
-        <input class="search" type="text" placeholder="search..">
-        <h2 class="products-section-heading m-0 mb-2">Products available</h2>
-        <div class="d-flex flex-wrap justify-content-center all-products">
-            <div class="product-container">
-                <img class="product-img"
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/165555/supradyn-multivitamin-tablets-strip-of-15-s-2-1627613618.jpg?dim=224x0&dpr=1&q=100"
-                    alt="">
-                <h3 class="product-title">Supradyn Multivitamin Tablet</h3>
-                <p class="product-price">MRP ₹33.93</p>
-            </div>
-            <div class="product-container">
-                <img class="product-img"
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/022290/becozym-c-forte-vitamin-b-complex-biotin-vitamin-c-strip-of-15-tablets-1-1627613618.jpg?dim=224x0&dpr=1&q=100"
-                    alt="">
-                <h3 class="product-title">Becozym C Forte</h3>
-                <p class="product-price">MRP ₹39.53</p>
-            </div>
-            <div class="product-container">
-                <img class="product-img"
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/270620/digene-acidity-gas-relief-tablets-15s-mint-flavour-1-1627613618.jpg?dim=224x0&dpr=1&q=100"
-                    alt="">
-                <h3 class="product-title">Depura 60k Nano Vit D Vitamin Drops</h3>
-                <p class="product-price">MRP ₹57.03</p>
-            </div>
-            <div class="product-container">
-                <img class="product-img"
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/022290/becozym-c-forte-vitamin-b-complex-biotin-vitamin-c-strip-of-15-tablets-1-1627613618.jpg?dim=224x0&dpr=1&q=100"
-                    alt="">
-                <h3 class="product-title">Becozym C Forte</h3>
-                <p class="product-price">MRP ₹101.70</p>
-            </div>
-            <div class="product-container">
-                <img class="product-img"
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/165555/supradyn-multivitamin-tablets-strip-of-15-s-2-1627613618.jpg?dim=224x0&dpr=1&q=100"
-                    alt="">
-                <h3 class="product-title">Supradyn Multivitamin Tablet</h3>
-                <p class="product-price">MRP ₹33.93</p>
-            </div>
-            <div class="product-container">
-                <img class="product-img"
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/022290/becozym-c-forte-vitamin-b-complex-biotin-vitamin-c-strip-of-15-tablets-1-1627613618.jpg?dim=224x0&dpr=1&q=100"
-                    alt="">
-                <h3 class="product-title">Becozym C Forte</h3>
-                <p class="product-price">MRP ₹39.53</p>
-            </div>
-            <div class="product-container">
-                <img class="product-img"
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/270620/digene-acidity-gas-relief-tablets-15s-mint-flavour-1-1627613618.jpg?dim=224x0&dpr=1&q=100"
-                    alt="">
-                <h3 class="product-title">Depura 60k Nano VitDVitamin Drops Depura 60k Nano Vit D Vitamin Drops</h3>
-                <p class="product-price">MRP ₹57.03</p>
-            </div>
-            <div class="product-container">
-                <img class="product-img"
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/022290/becozym-c-forte-vitamin-b-complex-biotin-vitamin-c-strip-of-15-tablets-1-1627613618.jpg?dim=224x0&dpr=1&q=100"
-                    alt="">
-                <h3 class="product-title">Becozym C Forte</h3>
-                <p class="product-price">MRP ₹101.70</p>
-            </div>
-            <div class="product-container">
-                <img class="product-img"
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/165555/supradyn-multivitamin-tablets-strip-of-15-s-2-1627613618.jpg?dim=224x0&dpr=1&q=100"
-                    alt="">
-                <h3 class="product-title">Supradyn Multivitamin Tablet</h3>
-                <p class="product-price">MRP ₹33.93</p>
-            </div>
-            <div class="product-container">
-                <img class="product-img"
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/022290/becozym-c-forte-vitamin-b-complex-biotin-vitamin-c-strip-of-15-tablets-1-1627613618.jpg?dim=224x0&dpr=1&q=100"
-                    alt="">
-                <h3 class="product-title">Becozym C Forte</h3>
-                <p class="product-price">MRP ₹39.53</p>
-            </div>
-            <div class="product-container">
-                <img class="product-img"
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/022290/becozym-c-forte-vitamin-b-complex-biotin-vitamin-c-strip-of-15-tablets-1-1627613618.jpg?dim=224x0&dpr=1&q=100"
-                    alt="">
-                <h3 class="product-title">Becozym C Forte</h3>
-                <p class="product-price">MRP ₹39.53</p>
-            </div>
-            <div class="product-container">
-                <img class="product-img"
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/270620/digene-acidity-gas-relief-tablets-15s-mint-flavour-1-1627613618.jpg?dim=224x0&dpr=1&q=100"
-                    alt="">
-                <h3 class="product-title">Depura 60k Nano Vit D Vitamin Drops</h3>
-                <p class="product-price">MRP ₹57.03</p>
-            </div>
-
-        </div>
+      </div>
     </section>
 
-    <section id="place" class="px-4 mt-5">
-        <h3>Location</h3>
-        <div class="d-flex justify-content-between align-items-center location-container">
-            <div class="w-50">
-                <iframe class="map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3449.9452350170786!2d78.77044371462267!3d30.15298172039295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909a46c8c2f6857%3A0x9183e1bbd486352c!2sAgency%20Chowk%2C%20Pauri%2C%20Uttarakhand%20246001!5e0!3m2!1sen!2sin!4v1628357083516!5m2!1sen!2sin"
-                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="w-50">
-                <img class="shop-img"
-                    src="https://media.businessex.com/subCatImages/54/1000_x_562/shutterstock_390599908.jpg" alt="">
-            </div>
+    <!-------------------- Product-section --------------- -->
+
+    <section class="product-section">
+      <input class="search" type="text" placeholder="search.." />
+      <h2 class="products-section-heading">Products available</h2>
+
+      <div class="all-products">
+        <div class="product-container">
+          <img
+            class="product-img"
+            src="https://cdn01.pharmeasy.in/dam/products_otc/165555/supradyn-multivitamin-tablets-strip-of-15-s-2-1627613618.jpg?dim=224x0&dpr=1&q=100"
+            alt=""
+          />
+          <h3 class="product-title">Supradyn Multivitamin Tablet</h3>
+          <p class="product-price">MRP ₹33.93</p>
         </div>
+
+        <div class="product-container">
+          <img
+            class="product-img"
+            src="https://cdn01.pharmeasy.in/dam/products_otc/022290/becozym-c-forte-vitamin-b-complex-biotin-vitamin-c-strip-of-15-tablets-1-1627613618.jpg?dim=224x0&dpr=1&q=100"
+            alt=""
+          />
+          <h3 class="product-title">Becozym C Forte</h3>
+          <p class="product-price">MRP ₹39.53</p>
+        </div>
+
+        <div class="product-container">
+          <img
+            class="product-img"
+            src="https://cdn01.pharmeasy.in/dam/products_otc/270620/digene-acidity-gas-relief-tablets-15s-mint-flavour-1-1627613618.jpg?dim=224x0&dpr=1&q=100"
+            alt=""
+          />
+          <h3 class="product-title">Depura 60k Nano Vit D Vitamin Drops</h3>
+          <p class="product-price">MRP ₹57.03</p>
+        </div>
+
+        <div class="product-container">
+          <img
+            class="product-img"
+            src="https://cdn01.pharmeasy.in/dam/products_otc/022290/becozym-c-forte-vitamin-b-complex-biotin-vitamin-c-strip-of-15-tablets-1-1627613618.jpg?dim=224x0&dpr=1&q=100"
+            alt=""
+          />
+          <h3 class="product-title">Becozym C Forte</h3>
+          <p class="product-price">MRP ₹101.70</p>
+        </div>
+
+        <div class="product-container">
+          <img
+            class="product-img"
+            src="https://cdn01.pharmeasy.in/dam/products_otc/165555/supradyn-multivitamin-tablets-strip-of-15-s-2-1627613618.jpg?dim=224x0&dpr=1&q=100"
+            alt=""
+          />
+          <h3 class="product-title">Supradyn Multivitamin Tablet</h3>
+          <p class="product-price">MRP ₹33.93</p>
+        </div>
+
+        <div class="product-container">
+          <img
+            class="product-img"
+            src="https://cdn01.pharmeasy.in/dam/products_otc/022290/becozym-c-forte-vitamin-b-complex-biotin-vitamin-c-strip-of-15-tablets-1-1627613618.jpg?dim=224x0&dpr=1&q=100"
+            alt=""
+          />
+          <h3 class="product-title">Becozym C Forte</h3>
+          <p class="product-price">MRP ₹39.53</p>
+        </div>
+
+        <div class="product-container">
+          <img
+            class="product-img"
+            src="https://cdn01.pharmeasy.in/dam/products_otc/270620/digene-acidity-gas-relief-tablets-15s-mint-flavour-1-1627613618.jpg?dim=224x0&dpr=1&q=100"
+            alt=""
+          />
+          <h3 class="product-title">
+            Depura 60k Nano VitDVitamin Drops Depura 60k Nano Vit D Vitamin
+            Drops
+          </h3>
+          <p class="product-price">MRP ₹57.03</p>
+        </div>
+
+        <div class="product-container">
+          <img
+            class="product-img"
+            src="https://cdn01.pharmeasy.in/dam/products_otc/022290/becozym-c-forte-vitamin-b-complex-biotin-vitamin-c-strip-of-15-tablets-1-1627613618.jpg?dim=224x0&dpr=1&q=100"
+            alt=""
+          />
+          <h3 class="product-title">Becozym C Forte</h3>
+          <p class="product-price">MRP ₹101.70</p>
+        </div>
+
+        <div class="product-container">
+          <img
+            class="product-img"
+            src="https://cdn01.pharmeasy.in/dam/products_otc/165555/supradyn-multivitamin-tablets-strip-of-15-s-2-1627613618.jpg?dim=224x0&dpr=1&q=100"
+            alt=""
+          />
+          <h3 class="product-title">Supradyn Multivitamin Tablet</h3>
+          <p class="product-price">MRP ₹33.93</p>
+        </div>
+
+        <div class="product-container">
+          <img
+            class="product-img"
+            src="https://cdn01.pharmeasy.in/dam/products_otc/022290/becozym-c-forte-vitamin-b-complex-biotin-vitamin-c-strip-of-15-tablets-1-1627613618.jpg?dim=224x0&dpr=1&q=100"
+            alt=""
+          />
+          <h3 class="product-title">Becozym C Forte</h3>
+          <p class="product-price">MRP ₹39.53</p>
+        </div>
+
+        <div class="product-container">
+          <img
+            class="product-img"
+            src="https://cdn01.pharmeasy.in/dam/products_otc/022290/becozym-c-forte-vitamin-b-complex-biotin-vitamin-c-strip-of-15-tablets-1-1627613618.jpg?dim=224x0&dpr=1&q=100"
+            alt=""
+          />
+          <h3 class="product-title">Becozym C Forte</h3>
+          <p class="product-price">MRP ₹39.53</p>
+        </div>
+
+        <div class="product-container">
+          <img
+            class="product-img"
+            src="https://cdn01.pharmeasy.in/dam/products_otc/270620/digene-acidity-gas-relief-tablets-15s-mint-flavour-1-1627613618.jpg?dim=224x0&dpr=1&q=100"
+            alt=""
+          />
+          <h3 class="product-title">Depura 60k Nano Vit D Vitamin Drops</h3>
+          <p class="product-price">MRP ₹57.03</p>
+        </div>
+      </div>
     </section>
 
-    <footer id="footer" class="text-center bg-primary py-3 p-ab position-relative px-4">
-        <a href="#top" class="going-top">
-            <div>
-                <i class="fa fa-angle-double-up shadow" style="font-size: 36px;color: rgb(248,249,250);"></i>
-            </div>
-        </a>
-        <div class="d-flex align-items-center px-5 text-light mb-2 footer-info-container" style="text-align:left;">
-            <!-- <div class="logo-and-name">
-            <img src= "./img/logo.jpg" alt="logo" class="footer-logo">
-            <h2>Medi Home</h2>
-            </div> -->
-            <div class="w-50 d-flex justify-content-center align-items-center footer-left-container">
-                <img id="footer-logo" src="./img/logo.jpg" alt="logo">
-                <h2 id="footer-title">Medi Home</h2>
-            </div>
-            <!-- <div class="w-50 px-3 address-container">
-            </div> -->
-            <div class="w-50 px-3 footer-right-container">
-                <p class="mb-1">
-                    Address: Near xyz chowk, Pauri 246001, Pauri Garhwal, Uttarakhand, India
-                <p class="mb-1">Phone: +911234567890</p>
-                <p class="mb-1">Email: xyz@gmail.com</p>
-                </p>
-            </div>
+    <!-------------------- Map-and-image --------------- -->
+    <section class="location-section">
+      <h3>Location</h3>
+      <div class="map-shop">
+        <span class="map">
+          <iframe
+            class="map-img"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3449.9452350170786!2d78.77044371462267!3d30.15298172039295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909a46c8c2f6857%3A0x9183e1bbd486352c!2sAgency%20Chowk%2C%20Pauri%2C%20Uttarakhand%20246001!5e0!3m2!1sen!2sin!4v1628357083516!5m2!1sen!2sin"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </span>
+        <span class="shop">
+          <img
+            class="shop-img"
+            src="https://media.businessex.com/subCatImages/54/1000_x_562/shutterstock_390599908.jpg"
+            alt=""
+          />
+        </span>
+      </div>
+    </section>
+
+    <!-------------------- Footer --------------- -->
+    <footer>
+      <div class="footer-top">
+        <div class="logo-footer">
+          <img src="./img/logo.jpg" alt="logo" />
+          <h2>Medi Home</h2>
         </div>
-        <div>
-            <a class="text-decoration-none text-light" href="" style="font-size: 22px;margin: 4px;" target="_blank"><i
-                    class="fa fa-facebook" style="font-size: 26px;"></i></a>
-            <a class="text-decoration-none text-light" href="" style="font-size: 22px;margin: 4px;" target="_blank"><i
-                    class="fa fa-github" style="font-size: 26px;"></i></a>
-            <a class="text-decoration-none text-light" style="font-size: 22px;margin: 4px;" target="_blank"
-                href="https://twitter.com/Mr_viratpandey"><i class="fa fa-twitter" style="font-size: 26px;"></i></a>
-            <a class="text-decoration-none text-light" href="" style="font-size: 22px;margin: 4px;" target="_blank"><i
-                    class="fa fa-instagram" style="font-size: 26px;"></i></a>
-            <a class="text-decoration-none text-light" href="" style="font-size: 22px;margin: 4px;" target="_blank"><i
-                    class="fa fa-linkedin" style="font-size: 26px;"></i></a>
+        <div class="address">
+          <p>
+            Address: Near xyz chowk, Pauri 246001, Pauri Garhwal, Uttarakhand,
+            India
+          </p>
+          <p>Phone: +911234567890</p>
+          <p>Email: xyz@gmail.com</p>
         </div>
-        <p class="text-light mb-0 footer-last">Copyright © 2021 | Medi Home</p>
-        </div>
+      </div>
+
+      <p class="copyright-msg">Copyright © 2021 | Medi Home</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
