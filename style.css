@@ -191,6 +191,18 @@ footer {
 .address p {
   margin: 0.2rem 0;
 }
+.social-media {
+  text-align: center;
+}
+.social-media li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+.social-media li a {
+  text-decoration: none;
+  color: white;
+}
 .copyright-msg {
   text-align: center;
 }
