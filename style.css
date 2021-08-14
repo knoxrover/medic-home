@@ -20,6 +20,7 @@ nav {
   background-color: var(--primary-color);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .logo-name {
   display: flex;
@@ -54,9 +55,9 @@ nav li a {
   color: white;
 }
 .login {
-  border: 1px solid white;
-  padding: 5px 10px;
-  border-radius: 5px;
+  /* border: 1px solid white; */
+  /* padding: 5px 10px;
+  border-radius: 5px; */
 }
 
 .poster img {
@@ -339,6 +340,61 @@ footer {
   }
   .copyright-msg {
     font-size: 14px;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  animation-name: show-menu;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show-menu {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 480px) {
+  .hamburger-menu {
+    display: block;
+    padding: 4px 12px;
+    filter: invert(1);
+    border: 1px solid #2e2323;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hamburger-menu img {
+    height: 30px;
+    width: 30px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--primary-color);
+    top: 35px;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    font-size: 15px;
+  }
+  nav ul li {
+    padding: 10px 10px 10px 15px;
+    width: 100%;
   }
 }
 
