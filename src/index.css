@@ -20,6 +20,7 @@ nav {
   background-color: var(--primary-color);
   width: 100%;
   position: fixed;
+  top: 0;
 }
 .nav {
   padding: 0 15px;
@@ -369,6 +370,7 @@ footer {
 
 .hamburger-menu {
   display: none;
+  cursor: pointer;
 }
 
 @media (max-width: 480px) {
@@ -378,7 +380,7 @@ footer {
     flex-direction: column;
     position: absolute;
     background-color: var(--primary-color);
-    top: 35px;
+    top: 34px;
     left: 0;
     width: 100%;
     padding: 0;
