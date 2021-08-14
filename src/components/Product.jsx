@@ -1,11 +1,26 @@
+import Productdetail from "./Productdetail";
+
 function Product(props) {
-  const { title, price, img } = props.item;
+  const { title, price, img, showDetail } = props.item;
   return (
-    <div className="product-container">
-      <img className="product-img" src={img} alt="" />
-      <h3 className="product-title">{title}</h3>
-      <p className="product-price">MRP ₹{price}</p>
-    </div>
+    <>
+      {showDetail ? (
+        <Productdetail
+          item={props.item}
+          hideDetailHandler={props.hideDetailHandler}
+        />
+      ) : null}
+      <div
+        className="product-container"
+        onClick={() => {
+          props.showDetailHandler(props.item);
+        }}
+      >
+        <img className="product-img" src={img} alt="" />
+        <h3 className="product-title">{title}</h3>
+        <p className="product-price">MRP ₹{price}</p>
+      </div>
+    </>
   );
 }
 
