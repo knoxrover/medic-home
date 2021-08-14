@@ -17,11 +17,14 @@ body {
   padding: 0;
 }
 nav {
+  background-color: var(--primary-color);
+  width: 100%;
+  position: fixed;
+}
+.nav {
   padding: 0 15px;
   height: 50px;
-  position: fixed;
   width: 100%;
-  background-color: var(--primary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,19 +45,19 @@ nav {
   margin: 0 10px;
   font-weight: 500;
 }
-nav ul {
+.nav-ul {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-nav li {
+.nav-ul li {
   display: inline;
-  margin: 0 5px;
+  margin: 0 8px;
 }
-nav li :hover {
+.nav-ul li :hover {
   text-decoration: underline;
 }
-nav li a {
+.nav-ul li a {
   text-decoration: none;
   color: white;
 }
@@ -65,7 +68,7 @@ nav li a {
 }
 
 .poster img {
-  margin-top: 50px;
+  padding-top: 50px;
   width: 100%;
 }
 
@@ -137,7 +140,13 @@ nav li a {
   margin: 0;
 }
 
-.location-section {
+.nav,
+.poster-section,
+.location-section,
+.products-section,
+.footer {
+  max-width: 1440px;
+  margin: auto;
 }
 
 .location-section h3 {
@@ -184,6 +193,9 @@ nav li a {
 
 footer {
   background-color: var(--primary-color);
+}
+
+.footer {
   color: white;
   padding: 15px 15px 10px 15px;
 }
@@ -290,17 +302,17 @@ footer {
 }
 
 @media (max-width: 530px) {
-  nav,
+  .nav,
   .products-section-heading,
   .location-section h3,
-  footer {
+  .footer {
     padding-left: 10px;
     padding-right: 10px;
   }
   .title {
     font-size: 23px;
   }
-  nav ul {
+  .nav-ul {
     font-size: 14px;
   }
   .search {
