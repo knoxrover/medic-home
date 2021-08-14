@@ -108,6 +108,7 @@ nav {
   height: 90vh;
   background: aliceblue;
   padding: 40px 25px;
+  border-radius: 5px;
   overflow-y: scroll;
   border: 1px solid darkgrey;
 }
@@ -133,6 +134,10 @@ nav {
 .pop-up-title {
   font-weight: 500;
 }
+/* .pop-up-price {
+}
+.pop-up-info {
+} */
 
 /* ------------------------------------ - ----------------------------------- */
 .products-section {
@@ -512,5 +517,9 @@ footer {
   }
   .product-price {
     font-size: 14px;
+  }
+  .pop-up-img {
+    height: auto;
+    width: 100%;
   }
 }

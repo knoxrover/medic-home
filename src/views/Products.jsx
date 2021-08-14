@@ -1,7 +1,5 @@
 import React from "react";
 import Product from "../components/Product";
-import Productdetail from "../components/Productdetail";
-import Productdetails from "../components/Productdetail";
 
 class Products extends React.Component {
   state = {

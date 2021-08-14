@@ -29,12 +29,6 @@ function Footer() {
           <li>
             <a href="/">Logo3</a>
           </li>
-          <li>
-            <a href="/">Logo4</a>
-          </li>
-          <li>
-            <a href="/">Logo5</a>
-          </li>
         </ul>
         <p className="copyright-msg">Copyright © 2021 Medi Home</p>
 
