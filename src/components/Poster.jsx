@@ -1,4 +1,4 @@
-import posterImg from "../asserts/img/poster.jpg";
+import posterImg from "../asserts/img/poster2.jpg";
 
 function Poster() {
   return (

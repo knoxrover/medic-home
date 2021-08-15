@@ -1,5 +1,7 @@
-import upImg from "../asserts/img/up2.png";
+import upImg from "../asserts/img/up.png";
 import logoImg from "../asserts/img/logo.jpg";
+import fbLogo from "../asserts/img/fb.png";
+import instaLogo from "../asserts/img/insta.png";
 
 function Footer() {
   return (
@@ -12,22 +14,23 @@ function Footer() {
           </div>
           <div className="address">
             <p>
-              Address: Near xyz chowk, Pauri 246001, Pauri Garhwal, Uttarakhand,
-              India
+              Address: Near Canara Bank, Kandoliya Road, Pauri 246001, Pauri
+              Garhwal, Uttarakhand, India
             </p>
-            <p>Phone: +911234567890</p>
-            <p>Email: xyz@gmail.com</p>
+            <p>Phone: +917417071183</p>
+            <p>Email: medihome.mh@gmail.com</p>
           </div>
         </div>
         <ul className="social-media">
           <li>
-            <a href="/">Logo1</a>
+            <a href="/">
+              <img className="social-logo" src={fbLogo} alt="" />
+            </a>
           </li>
           <li>
-            <a href="/">Logo2</a>
-          </li>
-          <li>
-            <a href="/">Logo3</a>
+            <a href="/">
+              <img className="social-logo" src={instaLogo} alt="" />
+            </a>
           </li>
         </ul>
         <p className="copyright-msg">Copyright © 2021 Medi Home</p>
