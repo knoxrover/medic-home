@@ -16,8 +16,16 @@ function Nav() {
           <img className="nav-logo" src={logoImg} alt="logo" />
           <h2 className="title">Medi Home</h2>
         </div>
-        <div className="hamburger-menu" onClick={() => menu()}>
+        {/* <div className="hamburger-menu" onClick={() => menu()}>
           <img src={hamImg} alt="" />
+        </div> */}
+        <div
+          className={ham ? "hamburger-menu close" : "hamburger-menu"}
+          onClick={() => menu()}
+        >
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
         <ul className={ham ? "nav-ul show" : "nav-ul"}>
           <li>
