@@ -17,6 +17,21 @@ body {
   padding: 0;
 }
 
+.root {
+  opacity: 0;
+  animation: fade-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .nav,
 .poster-section,
 .location-section,
@@ -107,6 +122,7 @@ nav {
   position: sticky;
   top: 12px;
   font-size: 16px;
+  z-index: 3;
 }
 
 /* -------------------------- Product-detail pop up ------------------------- */
@@ -254,13 +270,13 @@ nav {
   position: fixed;
   right: 2px;
   bottom: 2px;
-  overflow: hidden;
+  /* overflow: hidden;
   border-radius: 5px;
   height: 40px;
   width: 40px;
   background: white;
   padding: 3px;
-  border: 2px solid #11a9c6;
+  border: 2px solid #11a9c6; */
 }
 .going-top img {
   width: 30px;
@@ -342,6 +358,7 @@ footer {
   .search {
     position: static;
     width: 400px;
+    z-index: 0;
   }
   .all-products {
     min-height: 272px;

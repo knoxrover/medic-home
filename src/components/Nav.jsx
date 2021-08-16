@@ -1,5 +1,5 @@
 import logoImg from "../asserts/img/logo.jpg";
-import hamImg from "../asserts/img/hamburger.svg";
+// import hamImg from "../asserts/img/hamburger.svg";
 import { useState } from "react";
 
 function Nav() {
