@@ -1,4 +1,4 @@
-import Nav from "./components/Nav";
+import Nav from "./views/Nav";
 import Location from "./components/Location";
 import Poster from "./components/Poster";
 import Products from "./views/Products";

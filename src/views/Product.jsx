@@ -1,19 +1,27 @@
-import Productdetail from "./Productdetail";
+import Productdetail from "../components/Productdetail";
+import { useState } from "react";
 
 function Product(props) {
-  const { title, price, img, showDetail } = props.item;
+  const [showDetail, setShowDetail] = useState(false);
+
+  function showDetailHandler() {
+    if (showDetail === false) setShowDetail(true);
+    else setShowDetail(false);
+  }
+
+  const { title, price, img } = props.item;
   return (
     <>
       {showDetail ? (
         <Productdetail
           item={props.item}
-          hideDetailHandler={props.hideDetailHandler}
+          showDetailHandler={showDetailHandler}
         />
       ) : null}
       <div
         className="product-container"
         onClick={() => {
-          props.showDetailHandler(props.item);
+          showDetailHandler();
         }}
       >
         <img className="product-img" src={img} alt="" />

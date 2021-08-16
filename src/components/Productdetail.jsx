@@ -8,7 +8,7 @@ function Productdetail(props) {
         <button
           className="pop-up-close"
           onClick={() => {
-            props.hideDetailHandler(props.item);
+            props.showDetailHandler();
           }}
         >
           <img src={closeImg} alt="" />

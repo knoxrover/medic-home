@@ -92,8 +92,12 @@ nav {
 }
 .login {
   /* border: 1px solid white; */
-  /* padding: 5px 10px;
-  border-radius: 5px; */
+  /* border-radius: 5px; */
+  color: white;
+  cursor: pointer;
+}
+.login:hover {
+  color: #d7d7d7;
 }
 
 /* --------------------------------- POSTER --------------------------------- */

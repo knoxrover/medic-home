@@ -33,7 +33,7 @@ function Footer() {
             </a>
           </li>
         </ul>
-        <p className="copyright-msg">Copyright © 2021 Medi Home</p>
+        <p className="copyright-msg">copyright © 2021 Medi Home</p>
 
         <a href="#top">
           <div className="going-top">
