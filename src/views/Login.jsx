@@ -11,7 +11,7 @@ class Login extends Component {
       <div className="login-form">
         <div class="card">
           <button className="pop-up-close" onClick={() => showLoginHandler()}>
-            <img src={closeImg} alt="" />
+            <img src={closeImg} alt="close" />
           </button>
           <form>
             <h2 class="title"> Log in</h2>

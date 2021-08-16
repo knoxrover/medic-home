@@ -11,9 +11,9 @@ function Productdetail(props) {
             props.showDetailHandler();
           }}
         >
-          <img src={closeImg} alt="" />
+          <img src={closeImg} alt="close" />
         </button>
-        <img className="pop-up-img" src={img} alt="img" />
+        <img className="pop-up-img" src={img} alt="product-img" />
         <h2 className="pop-up-title">{title}</h2>
         <p className="pop-up-price">MRP ₹{price}</p>
         <p className="pop-up-info">

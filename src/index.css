@@ -141,7 +141,22 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: pop-in;
+  transform: scale(0);
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
 }
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .pd-container {
   position: relative;
   width: 90%;

@@ -17,7 +17,7 @@ function Location() {
           <img
             className="shop-img"
             src="https://media.businessex.com/subCatImages/54/1000_x_562/shutterstock_390599908.jpg"
-            alt=""
+            alt="medicine-shop"
           />
         </span>
       </div>

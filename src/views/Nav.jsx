@@ -27,7 +27,7 @@ function Nav() {
             <h2 className="title">Medi Home</h2>
           </div>
           {/* <div className="hamburger-menu" onClick={() => menu()}>
-          <img src={hamImg} alt="" />
+          <img src={hamImg} alt="menu" />
         </div> */}
           <div
             className={ham ? "hamburger-menu close" : "hamburger-menu"}

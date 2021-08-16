@@ -24,12 +24,12 @@ function Footer() {
         <ul className="social-media">
           <li>
             <a href="/">
-              <img className="social-logo" src={fbLogo} alt="" />
+              <img className="social-logo" src={fbLogo} alt="fb" />
             </a>
           </li>
           <li>
             <a href="/">
-              <img className="social-logo" src={instaLogo} alt="" />
+              <img className="social-logo" src={instaLogo} alt="insta" />
             </a>
           </li>
         </ul>

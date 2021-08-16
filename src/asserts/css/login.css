@@ -20,6 +20,20 @@
   padding-top: 40px;
   box-shadow: 2px 5px 20px rgb(0 0 0 / 10%);
   position: relative;
+  animation: pop-in;
+  transform: scale(0);
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .title {

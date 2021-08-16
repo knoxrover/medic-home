@@ -24,7 +24,7 @@ function Product(props) {
           showDetailHandler();
         }}
       >
-        <img className="product-img" src={img} alt="" />
+        <img className="product-img" src={img} alt="product-img" />
         <h3 className="product-title">{title}</h3>
         <p className="product-price">MRP ₹{price}</p>
       </div>
