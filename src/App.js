@@ -3,30 +3,35 @@ import Location from "./components/Location";
 import Poster from "./components/Poster";
 import Products from "./views/Products";
 import Footer from "./components/Footer";
-import Loading from "./components/Loading";
-import { useState } from "react";
+// import Loading from "./components/Loading";
+import Login from "./views/Login";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+// import { useState } from "react";
 
 function App() {
-  const [isLoad, setIsLoad] = useState(false);
-  setTimeout(() => {
-    setIsLoad(true);
-  }, 1000);
+  // const [isLoad, setIsLoad] = useState(false);
+  // setTimeout(() => {
+  //   setIsLoad(true);
+  // }, 500);
 
   return (
-    <>
-      {!isLoad ? (
-        <Loading />
-      ) : (
-        <div className="root">
-          <div id="top"></div>
-          <Nav />
-          <Poster />
-          <Products />
-          <Location />
-          <Footer />
-        </div>
-      )}
-    </>
+    <Router>
+      <>
+        <div id="top"></div>
+        <Nav />
+        <Switch>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/">
+            <Poster />
+            <Products />
+            <Location />
+          </Route>
+        </Switch>
+        <Footer />
+      </>
+    </Router>
   );
 }
 

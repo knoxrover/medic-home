@@ -17,11 +17,17 @@ body {
   padding: 0;
 }
 
-.root {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
   opacity: 0;
   animation: fade-in;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
 }
 @keyframes fade-in {
   0% {
@@ -79,26 +85,28 @@ nav {
   justify-content: center;
   transition: all 0.5s;
 }
-.nav-ul li {
+.nav-ul a {
   display: inline;
   margin: 0 8px;
+  color: white;
+  cursor: pointer;
 }
-.nav-ul li :hover {
+.nav-ul li {
+  display: inline;
+}
+.nav-ul li:hover {
   text-decoration: underline;
 }
-.nav-ul li a {
-  text-decoration: none;
-  color: white;
-}
+
 .login {
   /* border: 1px solid white; */
   /* border-radius: 5px; */
   color: white;
   cursor: pointer;
 }
-.login:hover {
+/* .login:hover {
   color: #d7d7d7;
-}
+} */
 
 /* --------------------------------- POSTER --------------------------------- */
 .poster-section {
@@ -539,9 +547,11 @@ footer {
     padding: 0;
     font-size: 15px;
   }
-  .nav-ul li {
-    padding: 10px 10px 10px 15px;
+  .nav-ul a {
+    padding: 10px 10px 10px 10px;
     width: 100%;
+    border-top: 1px solid #f0f8ff54;
+    margin: 0;
   }
   .hamburger-menu {
     padding: 4px 12px;
